@@ -1,19 +1,22 @@
-import { Component } from '@angular/core';
-import { ProductCardComponent } from '../producto/producto';
-import { ProductService } from '../../app/services/productos.service';
-import { Product } from '../../app/models/producto.model';
+import { Component, inject } from '@angular/core';
+import { ProductCardComponent } from '../product-card/product-card.component';
+import { ProductsService } from '../../app/services/productos.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-catalogo',
   standalone: true,
   imports: [ProductCardComponent],
   templateUrl: './catalogo.html',
-  styleUrl: './catalogo.css',
+  styleUrls: ['./catalogo.css'],
 })
 export class CatalogoComponent {
-  products:Product[] = [];
-  constructor(private productService:ProductService){
-    this.products=this.productService.getAll();
-  }
+
+  private productsService = inject(ProductsService);
+
+  products = toSignal(
+    this.productsService.getAll(),
+    { initialValue: [] }
+  );
 
 }

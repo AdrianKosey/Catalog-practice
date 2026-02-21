@@ -4,7 +4,7 @@
 </header>
 
 <section class="grid">
-  @for (p of products; track p.id) {
-    <app-producto [products]="p"></app-producto>
+  @for (p of products(); track p.id) {
+    <app-product-card [product]="p"></app-product-card>
   }
 </section>

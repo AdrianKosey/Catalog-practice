@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  
+  <product>
+    <id>1</id>
+    <name>Audífonos Bluetooth</name>
+    <price>599</price>
+    <imageUrl>assets/audifonos-bt.jpg</imageUrl>
+    <category>Audio</category>
+    <description>Audífonos inalámbricos con cancelación de ruido.</description>
+    <inStock>true</inStock>
+  </product>
+
+  <product>
+    <id>2</id>
+    <name>Teclado Mecánico RGB</name>
+    <price>1299</price>
+    <imageUrl>assets/teclado-mec.jpg</imageUrl>
+    <category>Accesorios</category>
+    <description>Teclado mecánico con switches azules y retroiluminación RGB.</description>
+    <inStock>true</inStock>
+  </product>
+
+  <product>
+    <id>3</id>
+    <name>Mouse Gamer</name>
+    <price>799</price>
+    <imageUrl>assets/mouse-gamer.jpg</imageUrl>
+    <category>Accesorios</category>
+    <description>Mouse óptico de alta precisión con 6 botones programables.</description>
+    <inStock>false</inStock>
+  </product>
+
+  <product>
+    <id>4</id>
+    <name>Monitor 34 pulgadas</name>
+    <price>7999</price>
+    <imageUrl>assets/monitor-34.jpg</imageUrl>
+    <category>Pantallas</category>
+    <description>Monitor Full HD de 34 pulgadas con panel IPS.</description>
+    <inStock>true</inStock>
+  </product>
+
+</products>

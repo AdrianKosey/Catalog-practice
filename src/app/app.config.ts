@@ -12,3 +12,7 @@ export const appConfig: ApplicationConfig = {
     
   ]
 };
+
+providers:[
+  importProvidersFrom(HttpClient)
+]
