@@ -1,0 +1,15 @@
+<header class="header">
+  <h1>Catálogo</h1>
+  <p>Ejemplo simple con Angular 21 standalone.</p>
+</header>
+
+<section class="grid">
+  @for (p of products(); track p.id) {
+    <app-product-card [product]="p"
+    (add)="agregar($event)"></app-product-card>
+  }
+</section>
+
+<hr class="sep"/>
+
+<app-carrito></app-carrito>
